@@ -40,4 +40,4 @@ void	ft_putchar(char c)
 ### This will fail saying: [undefined reference to 'main'], but that's ok because you already checked it works in the previous step.
 `gcc -Wall -Werror -Wextra #function/{file-without-main-function}.c && ./a.out`
 
-# TEST!
+# TEST
