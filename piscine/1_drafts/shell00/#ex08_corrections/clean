@@ -1,0 +1,5 @@
+# jdiosdad original
+# find -name '*~' -print -delete -o -name '#*#' -print -delete
+
+# dpentlan correction
+# find . -type f \( -name '*~' -print -delete -o -name '#*#' -print -delete \)

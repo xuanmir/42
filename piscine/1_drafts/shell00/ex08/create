@@ -1,0 +1,2 @@
+mkdir 'sub1' 'sub2' 'sub3' 'sub4' 'sub5' 'sub6'
+touch 'f1' 'f2~' 'f3#' '#f4#' '#f5~' '#f6' 'sub1/f1' 'sub2/f2~' 'sub3/f3#' 'sub4/#f4#' 'sub5/#f5~' 'sub6/#f6'
