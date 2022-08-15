@@ -1,9 +1,9 @@
 # C Tests 2022-08-15
 
 ### Create the default header
-On Emacs: `???`
-On Vim: `fn + f1`
-On VS Code: `???`
+- On Emacs: `???`
+- On Vim: `fn + f1`
+- On VS Code: `???`
 
 ### Test the formatting of your file.
 `norminette -R CheckForbiddenSourceHeader`
