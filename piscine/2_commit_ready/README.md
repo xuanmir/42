@@ -4,7 +4,7 @@ Here we prepare the repos to be synced with Vogsphere
 
 ### 1st try
 
-shell00_00
+shell00
 
 ### 1st retry
 
