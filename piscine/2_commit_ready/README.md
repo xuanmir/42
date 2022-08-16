@@ -1,6 +1,6 @@
-# 42 vogsphere
+# 42 commit ready
 
-Here we sync the repos from Vogsphere
+Here we prepare the repos to be synced with Vogsphere
 
 ### 1st try
 shell00_00
