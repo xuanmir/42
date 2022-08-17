@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/13 19:41:43 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/17 18:07:31 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/17 16:17:04 by jdiosdad          #+#    #+#             */
+/*   Updated: 2022/08/17 18:10:51 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void	ft_print_numbers(void)
 {
-	write(1, &c, 1);
+	char	digit;
+
+	digit = '0';
+	while (digit <= '9')
+	{
+		write(1, &digit, 1);
+		digit++;
+	}
 }
