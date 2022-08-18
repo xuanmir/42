@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   ft_print_combn.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/17 16:43:21 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/17 19:54:31 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/17 17:39:20 by jdiosdad          #+#    #+#             */
+/*   Updated: 2022/08/18 19:14:46 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,31 +17,30 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_print_nums(int ab, int cd)
+void	ft_print_nums(int nums)
 {
-	ft_putchar((ab / 10) + '0');
-	ft_putchar((ab % 10) + '0');
-	write(1, " ", 1);
-	ft_putchar((cd / 10) + '0');
-	ft_putchar((cd % 10) + '0');
-	if (ab < 98)
+	ft_putchar((nums / 10) + '0');
+	ft_putchar((nums % 10) + '0');
+	if (nums < 9)
 		write(1, ", ", 2);
+	else
+		ft_putchar('\n');
 }
 
-void	ft_print_comb2(void)
+void	ft_print_combn(int n)
 {
-	int	ab;
-	int	cd;
-
-	ab = 0;
-	while (ab <= 98)
-	{
-		cd = ab + 1;
-		while (cd <= 99)
-		{
-			ft_print_nums(ab, cd);
-			cd++;
-		}
-		ab++;
-	}
+	if (0 < n && n < 10)
+		ft_print_nums(n);
+	else
+		write(1, "Please enter a number between 1 and 9.\n", 39);
 }
+
+// n1
+// n2
+// n3
+// n4
+// n5
+// n6
+// n7
+// n8
+// n9

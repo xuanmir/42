@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/13 19:41:43 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/17 18:07:31 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/17 13:36:29 by jdiosdad          #+#    #+#             */
+/*   Updated: 2022/08/18 18:05:50 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_print_alphabet(void);
 
-void	ft_putchar(char c)
+int	main(void)
 {
-	write(1, &c, 1);
+	ft_print_alphabet();
+	return (0);
 }

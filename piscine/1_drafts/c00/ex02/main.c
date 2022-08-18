@@ -1,31 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/17 16:17:04 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/17 16:23:35 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/17 13:36:29 by jdiosdad          #+#    #+#             */
+/*   Updated: 2022/08/18 18:03:37 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_print_numbers(void)
-{
-	char	digit;
-
-	digit = '0';
-	while (digit <= '9')
-	{
-		write(1, &digit, 1);
-		digit++;
-	}
-}
+void	ft_print_reverse_alphabet(void);
 
 int	main(void)
 {
-	ft_print_numbers();
+	ft_print_reverse_alphabet();
 	return (0);
 }

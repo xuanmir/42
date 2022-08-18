@@ -1,24 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/13 19:41:43 by xuanmir           #+#    #+#             */
-/*   Updated: 2022/08/16 15:51:39 by xuanmir          ###   ########.fr       */
+/*   Created: 2022/08/17 17:39:20 by jdiosdad          #+#    #+#             */
+/*   Updated: 2022/08/18 19:10:44 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_print_combn(int n);
 
 int	main(void)
 {
-	ft_putchar('A');
+	ft_print_combn(2);
+	ft_print_combn(8);
+	ft_print_combn(0);
+	ft_print_combn(14);
+	ft_print_combn(-1);
 	return (0);
 }

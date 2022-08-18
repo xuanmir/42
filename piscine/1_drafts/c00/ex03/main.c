@@ -1,28 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_combn.c                                   :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/17 17:39:20 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/17 17:49:31 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/17 16:17:04 by jdiosdad          #+#    #+#             */
+/*   Updated: 2022/08/18 18:00:50 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_print_combn(int n)
-{
-	if (0 < n && n < 10)
-		write(1, &n, 1);
-}
+void	ft_print_numbers(void);
 
 int	main(void)
 {
-	ft_print_combn(2);
-	ft_print_combn(14);
-	ft_print_combn(0);
-	ft_print_combn(-1);
+	ft_print_numbers();
 	return (0);
 }

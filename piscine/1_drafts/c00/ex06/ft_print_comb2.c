@@ -6,7 +6,7 @@
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 16:43:21 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/17 19:44:31 by jdiosdad         ###   ########.fr       */
+/*   Updated: 2022/08/18 19:14:50 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,10 +44,4 @@ void	ft_print_comb2(void)
 		}
 		ab++;
 	}
-}
-
-int	main(void)
-{
-	ft_print_comb2();
-	return (0);
 }
