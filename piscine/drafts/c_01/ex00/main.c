@@ -5,19 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/18 17:52:02 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/19 13:03:05 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/19 11:48:02 by jdiosdad          #+#    #+#             */
+/*   Updated: 2022/08/19 12:54:16 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putnbr(int nb);
+#include <stdio.h>
+
+void	ft_ft(int *nbr);
 
 int	main(void)
 {
-	ft_putnbr(42);
-	ft_putnbr(0);
-	ft_putnbr(-256);
-	ft_putnbr(2147483647);
-	ft_putnbr(-2147483648);
+	int	a;
+	int	*nbr;
+
+	nbr = &a;
+	ft_ft(nbr);
+	printf("%d\n", *nbr);
 	return (0);
 }
