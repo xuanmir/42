@@ -5,24 +5,39 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/19 11:48:02 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/19 13:38:09 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/19 14:06:35 by jdiosdad          #+#    #+#             */
+/*   Updated: 2022/08/19 14:48:46 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	ft_ft(int *nbr);
+void	ft_swap(int *a, int *b);
 
-// Display the value and the address
+// int	main(void)
+// {
+// 	int	var_a;
+// 	int	var_b;
+// 	int	*a;
+// 	int	*b;
+
+// 	a = &var_a;
+// 	b = &var_b;
+// 	*a = 01010;
+// 	*b = 10101;
+// 	ft_swap(a, b);
+// 	printf("a = %d, b = %d\n", *a, *b);
+// 	return (0);
+// }
+
 int	main(void)
 {
-	int	a;
-	int	*nbr;
+	int	var_a;
+	int	var_b;
 
-	nbr = &a;
-	ft_ft(nbr);
-	printf("%d\n", *nbr);
-	printf("%p\n", nbr);
+	var_a = 123;
+	var_b = 321;
+	ft_swap(&var_a, &var_b);
+	printf("a = %d, b = %d\n", var_a, var_b);
 	return (0);
 }
