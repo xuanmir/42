@@ -3,14 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/19 14:51:55 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/19 14:54:08 by jdiosdad         ###   ########.fr       */
+/*   Updated: 2022/08/24 01:39:31 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	return (0);
+	*div = a / b;
+	*mod = a % b;
+
+	/*
+	<_line:[13] _column:[48] _selected:[4]>
+	{
+		<2022-08-21@18:40:42>
+		@JDIOSDAD
+		1st comment
+
+		<2022-08-21@18:42:19>
+		@XUANMIR
+		2nd comment
+	}
+	<_line[13]_column[9]_selected[10]>
+	{}
+	*/
 }
