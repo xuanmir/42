@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/19 13:39:44 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/19 14:04:50 by jdiosdad         ###   ########.fr       */
+/*   Updated: 2022/08/23 23:18:20 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,10 @@
 
 void	ft_ultimate_ft(int *********nbr);
 
-// Display the value and the address. Why does the address change each time?
+/*
+Display the value and the address.
+Why does the address change each time?
+*/
 int	main(void)
 {
 	int	a;
