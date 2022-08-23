@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/19 11:48:02 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/19 13:38:09 by jdiosdad         ###   ########.fr       */
+/*   Updated: 2022/08/23 23:40:26 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 void	ft_ft(int *nbr);
 
-// Display the value and the address
+/*
+Display the value and the address
+*/
 int	main(void)
 {
 	int	a;
