@@ -3,13 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   checkinput.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akurochk <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/21 09:04:47 by akurochk          #+#    #+#             */
-/*   Updated: 2022/08/21 14:49:29 by akurochk         ###   ########.fr       */
+/*   Updated: 2022/08/23 16:41:12 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+Check if the 2nd argument contains 4 values equal to '1'
+Check if the 2nd argument contains no more than 2 values equal to '4'
+Check if the 2nd argument contains 31 characters
+*/
 int	are_clues_correct(char *input)
 {
 	int	i;
@@ -32,6 +37,27 @@ int	are_clues_correct(char *input)
 	return (1);
 }
 
+/*
+Check if the 2nd argument contains 31 characters
+*/
+int	are_clues_correct_simplified(char *input)
+{
+	int	i;
+
+	i = 0;
+	while (input[i])
+	{
+		i++;
+	}
+	if (i != 31)
+		return (0);
+	return (1);
+}
+
+/*
+Check if the 2nd argument contains values between '1' and '4'
+Write the valid_pov_count
+*/
 int	prepare_input(char *av, int *input)
 {
 	int	i;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   use_clues_1_and_4.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akurochk <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/21 15:15:32 by akurochk          #+#    #+#             */
-/*   Updated: 2022/08/21 15:15:40 by akurochk         ###   ########.fr       */
+/*   Updated: 2022/08/23 16:23:48 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,9 @@ void	use_clue_4_vd(int district[4][4], int *input, int view)
 	use_clue_4_vl(district, input, view);
 }
 
+/*
+If view = '4', put '1, 2, 3, 4' in that point_of_view
+*/
 void	use_clue_4_vu(int district[4][4], int *input)
 {
 	int	building;
@@ -91,6 +94,9 @@ void	use_clue_4_vu(int district[4][4], int *input)
 	use_clue_4_vd(district, input, view);
 }
 
+/*
+If view = '1', put '4' in the district[][]
+*/
 void	use_clue_1(int district[4][4], int *input)
 {
 	int	view;

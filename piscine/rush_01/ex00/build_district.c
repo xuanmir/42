@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   build_district.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akurochk <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/21 09:32:40 by akurochk          #+#    #+#             */
-/*   Updated: 2022/08/21 15:19:12 by akurochk         ###   ########.fr       */
+/*   Updated: 2022/08/23 15:44:52 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,9 @@ int		show_district(int district[4][4]);
 
 void	use_clue_1(int district[4][4], int *input);
 
+/*
+Fill the array with '0'
+*/
 int	build_district(int *input)
 {
 	int	line;
