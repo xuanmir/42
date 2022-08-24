@@ -54,27 +54,29 @@ ptr = &ptr; ????
 ```c
 return (variable_name);
 /*
-returns the value stored in [variable_name]
+Returns the value stored in [variable_name].
 */
 ```
 ```c
 return (pointer_name);
 /*
-returns the value stored in [pointer_name]
-since [pointer_name] is a pointer, then the value will be an address to another [something_name]
-therefore, this returns the address stored in [pointer_name]
+Returns the value stored in [pointer_name].
+However, since [pointer_name] is a pointer,
+the value will be an address to another [something_name]
+therefore…
+Returns the address stored in [pointer_name].
 */
 ```
 ```c
 return (*pointer_name);
 /*
-returns the value found at the address stored in [pointer_name]
+Returns the value found at the address stored in [pointer_name].
 */
 ```
 ```c
 return (&pointer_name);
 /*
-returns the address of [pointer_name]
+Returns the address of [pointer_name].
 */
 ```
 
