@@ -1,31 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/24 04:03:53 by xuanmir           #+#    #+#             */
-/*   Updated: 2022/08/24 10:37:54 by xuanmir          ###   ########.fr       */
+/*   Created: 2022/08/24 04:31:46 by xuanmir           #+#    #+#             */
+/*   Updated: 2022/08/24 15:41:46 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putstr(char *str);
-
-/*
-???
-*/
-int	main(void)
+int	ft_strlen(char *str)
 {
-	char	*str = "Hello world!\n";
+	int	iterator;
 
-	ft_putstr(str);
-	return (0);
+	iterator = 0;
+	while (str[iterator])
+	{
+		iterator++;
+	}
+	return (iterator);
 }
-
-// int	main(char *str)
-// {
-// 	*str = "Hello world!\n";
-// 	ft_putstr(str);
-// 	return (0);
-// }
