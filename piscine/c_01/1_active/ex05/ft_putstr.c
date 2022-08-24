@@ -6,7 +6,7 @@
 /*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/24 04:05:31 by xuanmir           #+#    #+#             */
-/*   Updated: 2022/08/24 05:52:52 by xuanmir          ###   ########.fr       */
+/*   Updated: 2022/08/24 10:19:52 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_putstr(char *str)
 	iterator = 0;
 	while (str[iterator])
 	{
-		ft_putchar(str[iterator] + '0');
+		ft_putchar(str[iterator]);
 		iterator++;
 	}
 }
