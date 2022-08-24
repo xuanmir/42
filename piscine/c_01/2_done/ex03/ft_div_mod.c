@@ -1,20 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/19 14:50:24 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/19 14:54:21 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/19 14:51:55 by jdiosdad          #+#    #+#             */
+/*   Updated: 2022/08/24 02:11:23 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-void	ft_div_mod(int a, int b, int *div, int *mod);
-
-int	main(void)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	return (0);
+	*div = a / b;
+	*mod = a % b;
 }

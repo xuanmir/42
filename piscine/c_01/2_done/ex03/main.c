@@ -5,27 +5,30 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/19 11:48:02 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/24 03:22:25 by xuanmir          ###   ########.fr       */
+/*   Created: 2022/08/19 14:50:24 by jdiosdad          #+#    #+#             */
+/*   Updated: 2022/08/24 03:22:05 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	ft_ft(int *nbr);
+void	ft_div_mod(int a, int b, int *div, int *mod);
 
 /*
-Display the pointer address (%p) stored in pointer nbr
-Display the integer value (%i) found at the address stored in pointer nbr
+Display the integer value (%i) found at the address stored in pointer div
+Display the integer value (%i) found at the address stored in pointer mod
 */
 int	main(void)
 {
-	int	a;
-	int	*nbr;
+	int	division;
+	int	remainder;
+	int	*div;
+	int	*mod;
 
-	nbr = &a;
-	ft_ft(nbr);
-	printf("%p\n", nbr);
-	printf("%i\n", *nbr);
+	div = &division;
+	mod = &remainder;
+	ft_div_mod(36, 24, div, mod);
+	printf("Division: %i\n", *div);
+	printf("Remainder: %i\n", *mod);
 	return (0);
 }

@@ -5,27 +5,32 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/19 11:48:02 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/24 03:22:25 by xuanmir          ###   ########.fr       */
+/*   Created: 2022/08/24 03:29:28 by xuanmir           #+#    #+#             */
+/*   Updated: 2022/08/24 04:01:37 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	ft_ft(int *nbr);
+void	ft_ultimate_div_mod(int *a, int *b);
 
 /*
-Display the pointer address (%p) stored in pointer nbr
-Display the integer value (%i) found at the address stored in pointer nbr
+Display the integer value (%i) found at the address stored in pointer a
+Display the integer value (%i) found at the address stored in pointer b
 */
 int	main(void)
 {
-	int	a;
-	int	*nbr;
+	int	arg1;
+	int	arg2;
+	int	*a;
+	int	*b;
 
-	nbr = &a;
-	ft_ft(nbr);
-	printf("%p\n", nbr);
-	printf("%i\n", *nbr);
+	a = &arg1;
+	b = &arg2;
+	*a = 36;
+	*b = 24;
+	ft_ultimate_div_mod(a, b);
+	printf("Division: %i\n", *a);
+	printf("Remainder: %i\n", *b);
 	return (0);
 }

@@ -5,27 +5,45 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/19 11:48:02 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/24 03:22:25 by xuanmir          ###   ########.fr       */
+/*   Created: 2022/08/24 04:03:53 by xuanmir           #+#    #+#             */
+/*   Updated: 2022/08/24 05:01:14 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-void	ft_ft(int *nbr);
+void	ft_putstr(char *str);
 
 /*
-Display the pointer address (%p) stored in pointer nbr
-Display the integer value (%i) found at the address stored in pointer nbr
+???
 */
 int	main(void)
 {
-	int	a;
-	int	*nbr;
+	char	*str;
+	char	string;
 
-	nbr = &a;
-	ft_ft(nbr);
-	printf("%p\n", nbr);
-	printf("%i\n", *nbr);
+	str = &string;
+	*str = "Hello world!\n";
+	ft_putstr(str);
 	return (0);
+
+	/*
+	<_line[24]_column[10]_selected[18]>
+	{
+		<2022-08-24@04:57:52>
+		∆GCC
+		Error: Incompatible pointer to integer conversion assigning to 'char' from 'char [14]'
+		[-Werror,-Wint-conversion]
+
+		<2022-08-24@05:00:19>
+		@XUANMIR
+		Ahhhhh, I hate this!
+	}
+	*/
 }
+
+// int	main(void)
+// {
+// 	char	str[14] = "Hello world!\n";
+
+// 	ft_putstr(str);
+// 	return (0);
+// }

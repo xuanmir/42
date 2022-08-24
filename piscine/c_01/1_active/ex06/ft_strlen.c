@@ -1,32 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/19 14:51:55 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/24 01:39:31 by xuanmir          ###   ########.fr       */
+/*   Created: 2022/08/24 04:31:46 by xuanmir           #+#    #+#             */
+/*   Updated: 2022/08/24 04:31:56 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
+int	ft_strlen(char *str)
 {
-	*div = a / b;
-	*mod = a % b;
-
-	/*
-	<_line:[13] _column:[48] _selected:[4]>
-	{
-		<2022-08-21@18:40:42>
-		@JDIOSDAD
-		1st comment
-
-		<2022-08-21@18:42:19>
-		@XUANMIR
-		2nd comment
-	}
-	<_line[13]_column[9]_selected[10]>
-	{}
-	*/
+	
 }
