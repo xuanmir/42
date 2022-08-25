@@ -60,3 +60,4 @@ dkms.conf
 
 # Replit stuff
 .ccls-cache
+*.blob
