@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/24 19:41:10 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/25 19:28:10 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/25 21:51:41 by jdiosdad          #+#    #+#             */
+/*   Updated: 2022/08/25 21:57:53 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+int	ft_str_is_printable(char *str)
 {
 	int	index;
 
 	index = 0;
-	while (src[index] != '\0')
+	while (str[index])
 	{
-		dest = src;
-		index++;
+		if (str[index] >= 32)
+			index++;
+		else
+			return (0);
 	}
-	dest[index - 1] = '\0';
-	return (dest);
+	return (1);
 }

@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/24 19:41:10 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/25 19:28:10 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/25 21:23:44 by jdiosdad          #+#    #+#             */
+/*   Updated: 2022/08/25 21:26:29 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+int	ft_str_is_uppercase(char *str)
 {
 	int	index;
 
 	index = 0;
-	while (src[index] != '\0')
+	while (str[index])
 	{
-		dest = src;
-		index++;
+		if (str[index] >= 'A' && str[index] <= 'Z')
+			index++;
+		else
+			return (0);
 	}
-	dest[index - 1] = '\0';
-	return (dest);
+	return (1);
 }

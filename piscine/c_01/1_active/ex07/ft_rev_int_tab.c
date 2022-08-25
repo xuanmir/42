@@ -6,7 +6,7 @@
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/24 16:02:51 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/25 18:26:32 by jdiosdad         ###   ########.fr       */
+/*   Updated: 2022/08/25 19:44:01 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,11 @@
 
 void	ft_rev_int_tab(int *tab, int size)
 {
-	int	reverse[size];
 	int	index;
+	int	*reverse;
 
 	index = 0;
+	reverse = &size;
 	while (tab[index] != '\0')
 	{
 		size--;
