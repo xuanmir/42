@@ -84,6 +84,7 @@ Returns the address of [pointer_name].
 ### Pointer dereferencing
 Dereference: access, execute, expand, interpret, unwrap, etc.
 
+---
 https://en.wikipedia.org/wiki/Dereference_operator
 
 https://riptutorial.com/c/example/4724/dereferencing-a-pointer
