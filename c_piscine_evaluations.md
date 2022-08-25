@@ -7,5 +7,5 @@ norminette -R CheckForbiddenSourceHeader
 
 ### Compile your program file.
 ```
-gcc -Wall -Werror -Wextra main.c ft_something.c && ./a.out
+gcc -Wall -Werror -Wextra *.c && ./a.out
 ```

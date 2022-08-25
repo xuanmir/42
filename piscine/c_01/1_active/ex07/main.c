@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/24 16:03:00 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/24 19:36:32 by jdiosdad         ###   ########.fr       */
+/*   Updated: 2022/08/25 15:47:55 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,12 @@
 
 void	ft_rev_int_tab(int *tab, int size);
 
-// int	ft_strlen(char *str)
-// {
-// 	int	iterator;
-
-// 	iterator = 0;
-// 	while (str[iterator])
-// 	{
-// 		iterator++;
-// 	}
-// 	return (iterator);
-// }
-
 int	main(void)
 {
-	char	str[] = "Reverse";
+	int tab[] = {1, 2, 3};
 
-	ft_rev_int_tab(str, 8);
-	printf("%s", tab);
+	printf("Original: %i, %i, %i\n", tab[0], tab[1], tab[2]);
+	ft_rev_int_tab(tab, 3);
+	printf("Reversed: %i, %i, %i\n", tab[0], tab[1], tab[2]);
 	return (0);
 }

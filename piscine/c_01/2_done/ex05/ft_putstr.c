@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/24 04:05:31 by xuanmir           #+#    #+#             */
-/*   Updated: 2022/08/24 15:28:56 by jdiosdad         ###   ########.fr       */
+/*   Updated: 2022/08/25 13:31:32 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 void	ft_putstr(char *str)
 {
-	int	iterator;
+	int	index;
 
-	iterator = 0;
-	while (str[iterator])
+	index = 0;
+	while (str[index] != '\0')
 	{
-		write(1, &str[iterator], 1);
-		iterator++;
+		write(1, &str[index], 1);
+		index++;
 	}
 }
 
@@ -31,12 +31,12 @@ void	ft_putstr(char *str)
 
 // void	ft_putstr(char *str)
 // {
-// 	int	iterator;
+// 	int	index;
 
-// 	iterator = 0;
-// 	while (str[iterator])
+// 	index = 0;
+// 	while (str[index] != '\0')
 // 	{
-// 		ft_putchar(str[iterator]);
-// 		iterator++;
+// 		ft_putchar(str[index]);
+// 		index++;
 // 	}
 // }

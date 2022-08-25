@@ -1,3 +1,11 @@
-# 42 github backup
+# 42 Journey
 
-...
+Characters
+
+Integers
+
+Pointers
+
+Character Strings
+
+Malloc

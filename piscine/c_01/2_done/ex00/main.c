@@ -6,7 +6,7 @@
 /*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/19 11:48:02 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/24 03:22:25 by xuanmir          ###   ########.fr       */
+/*   Updated: 2022/08/25 13:33:36 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	main(void)
 
 	nbr = &a;
 	ft_ft(nbr);
-	printf("%p\n", nbr);
-	printf("%i\n", *nbr);
+	printf("Address stored in pointer: %p\n", nbr);
+	printf("Value found at the address: %i\n", *nbr);
 	return (0);
 }
