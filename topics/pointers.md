@@ -93,13 +93,3 @@ https://bytes.com/topic/c/answers/594812-printing-integer-variable-using-putchar
 https://wuhrr.wordpress.com/2007/11/09/how-to-print-a-long-integer-using-only-putchar
 
 https://www.log2base2.com/c-examples/loop/split-a-number-into-digits-in-c.html
-
-https://leetcode.com/problems/the-skyline-problem
-
-https://www.programmersought.com/article/92395576179
-
-https://radicle.network
-
-https://twitter.com/TaschaLabs/status/1561790405263273984
-
-https://twitter.com/BitMEXResearch/status/1560604363281686528
