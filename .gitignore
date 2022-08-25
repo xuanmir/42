@@ -60,5 +60,5 @@ dkms.conf
 
 # Replit stuff
 .ccls-cache
-#.replit
-replit.nix
+# .replit
+# replit.nix
