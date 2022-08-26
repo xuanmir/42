@@ -42,6 +42,7 @@ array[2] = 'c';
 // Unfortunately, this is not allowed by the Norm.
 char  array[] = "Abc";
 ```
+
 ---
 ### Integer Arrays
 
@@ -59,11 +60,20 @@ array[2] = 3;
 // Unfortunately, this is not allowed by the Norm.
 int array[] = {1, 2, 3};
 ```
+
 ---
 ### Recursion
 
+```c
+str[index] = str[index] + str[index - 1];
+```
+
 ---
 ### Main Arguments
+
+argc
+
+argv
 
 ---
 ### Split
