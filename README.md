@@ -13,6 +13,8 @@
 - Control structures (if, while..) must have braces, unless they contain a single line or a single condition.
 - A function can take 4 named parameters maximum.
 - You can’t declare more than 5 variables per function.
+- You cannot include a .c file.
+- You cannot have more than 5 function-definitions in a .c file.
 
 ---
 ### Characters
