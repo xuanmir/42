@@ -17,19 +17,28 @@
 ---
 ### Character Strings
 
+```c
 array[index] == *(array + index)
-
+```
+```c
 char array[] = "Abcdef";
+```
+```c
+char array[size];
 
+array[index] = 'a';
+```
 ---
 ### Integer Arrays
 
+```c
 int array[] = {#, #, #};
-
+```
+```c
 int array[size];
 
 array[index] = #;
-
+```
 ---
 ### Recursion
 
