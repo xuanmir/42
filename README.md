@@ -1,7 +1,7 @@
 # 42 Journey
 
 ---
-## Things to clarify before the exam:
+## Things to clarify before the next exam
 - Conversions between char and int.
 - Declaration and assignation of character strings and integer arrays on separate lines.
 
