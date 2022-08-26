@@ -32,6 +32,9 @@ array[index] = 'a';
 ### Integer Arrays
 
 ```c
+array[index] == *(array + index)
+```
+```c
 int array[] = {#, #, #};
 ```
 ```c
