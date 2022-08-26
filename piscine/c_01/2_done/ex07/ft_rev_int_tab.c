@@ -6,29 +6,9 @@
 /*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/24 16:02:51 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/26 01:39:50 by xuanmir          ###   ########.fr       */
+/*   Updated: 2022/08/26 03:03:20 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-// void	ft_putstr(char *str);
-
-// void	ft_swap(int *a, int *b);
-
-// void	ft_rev_int_tab(int *tab, int size)
-// {
-// 	int	index;
-// 	int	*reverse;
-
-// 	index = 0;
-// 	reverse = &size;
-// 	while (tab[index] != '\0')
-// 	{
-// 		size--;
-// 		reverse[size] = tab[index];
-// 		index++;
-// 	}
-// 	*tab = *reverse;
-// }
 
 void	ft_rev_int_tab(int *tab, int size)
 {
@@ -47,6 +27,22 @@ void	ft_rev_int_tab(int *tab, int size)
 		last--;
 	}
 }
+
+// void	ft_rev_int_tab(int *tab, int size)
+// {
+// 	int	index;
+// 	int	*reverse;
+
+// 	index = 0;
+// 	reverse = &size;
+// 	while (tab[index] != '\0')
+// 	{
+// 		size--;
+// 		reverse[size] = tab[index];
+// 		index++;
+// 	}
+// 	*tab = *reverse;
+// }
 
 // void	ft_rev_int_tab(int *tab, int size)
 // {
