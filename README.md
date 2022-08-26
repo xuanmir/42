@@ -1,7 +1,4 @@
-# 42 Journey
-
----
-## Things to clarify before the next exam
+# Things to clarify before the next exam
 - Conversions between char and int.
 - Declaration and assignation of character strings and integer arrays on separate lines.
 
@@ -21,10 +18,10 @@
 array[index] == *(array + index)
 ```
 ```c
-char array[] = "Abcdef";
+char  array[] = "Abcdef";
 ```
 ```c
-char array[size];
+char  array[size];
 
 array[index] = 'a';
 ```
