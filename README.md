@@ -11,6 +11,8 @@
 - Multiple assignments are strictly forbidden.
 - You may add a new line after an instruction or control structure, but you’ll have to add an indentation with brackets or assignment operator. Operators must be at the beginning of a line.
 - Control structures (if, while..) must have braces, unless they contain a single line or a single condition.
+- A function can take 4 named parameters maximum.
+- You can’t declare more than 5 variables per function.
 
 ---
 ### Characters
@@ -28,12 +30,15 @@
 array[index] == *(array + index)
 ```
 ```c
-char  array[] = "Abcdef";
+char  array[3];
+
+array[0] = 'a';
+array[1] = 'b';
+array[2] = 'c';
 ```
 ```c
-char  array[size];
-
-array[index] = 'a';
+// Unfortunately, this is not allowed by the Norm.
+char  array[] = "Abc";
 ```
 ---
 ### Integer Arrays
@@ -42,12 +47,15 @@ array[index] = 'a';
 array[index] == *(array + index)
 ```
 ```c
-int array[] = {#, #, #};
+int array[3];
+
+array[0] = 1;
+array[1] = 2;
+array[2] = 3;
 ```
 ```c
-int array[size];
-
-array[index] = #;
+// Unfortunately, this is not allowed by the Norm.
+int array[] = {1, 2, 3};
 ```
 ---
 ### Recursion
