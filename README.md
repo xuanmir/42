@@ -1,11 +1,25 @@
 # 42 Journey
 
-Characters
+### Characters
 
-Integers
+### Integers
 
-Pointers
+### Pointers
 
-Character Strings
+### Character Strings
 
-Malloc
+array[index] == *(array + index)
+
+char array[] = "Abcdef";
+
+### Integer Arrays
+
+int array[] = {#, #, #};
+
+int array[size];
+
+array[index] = #;
+
+### Recursion
+
+### Malloc

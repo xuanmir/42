@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/24 16:02:51 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/25 19:44:01 by jdiosdad         ###   ########.fr       */
+/*   Updated: 2022/08/26 01:39:50 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,38 @@
 
 // void	ft_swap(int *a, int *b);
 
+// void	ft_rev_int_tab(int *tab, int size)
+// {
+// 	int	index;
+// 	int	*reverse;
+
+// 	index = 0;
+// 	reverse = &size;
+// 	while (tab[index] != '\0')
+// 	{
+// 		size--;
+// 		reverse[size] = tab[index];
+// 		index++;
+// 	}
+// 	*tab = *reverse;
+// }
+
 void	ft_rev_int_tab(int *tab, int size)
 {
-	int	index;
-	int	*reverse;
+	int	first;
+	int	last;
+	int	tmp;
 
-	index = 0;
-	reverse = &size;
-	while (tab[index] != '\0')
+	first = 0;
+	last = size - 1;
+	while (first < last)
 	{
-		size--;
-		reverse[size] = tab[index];
-		index++;
+		tmp = tab[first];
+		tab[first] = tab[last];
+		tab[last] = tmp;
+		first++;
+		last--;
 	}
-	*tab = *reverse;
 }
 
 // void	ft_rev_int_tab(int *tab, int size)

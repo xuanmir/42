@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 19:07:22 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/25 19:07:42 by jdiosdad         ###   ########.fr       */
+/*   Updated: 2022/08/26 02:33:50 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n);
 
