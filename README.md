@@ -26,7 +26,7 @@
 ### Pointers
 
 ---
-### Character Strings
+### Character Arrays a.k.a. Strings
 
 ```c
 array[index] == *(array + index)
