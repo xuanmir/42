@@ -65,7 +65,7 @@ int array[] = {1, 2, 3};
 ### Recursion
 
 ```c
-str[index] = str[index] + str[index - 1];
+str[index] = str[index - 1] + str[index];
 ```
 
 ---
