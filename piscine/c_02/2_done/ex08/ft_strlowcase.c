@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/25 19:07:22 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/26 02:33:50 by xuanmir          ###   ########.fr       */
+/*   Created: 2022/08/26 03:46:52 by xuanmir           #+#    #+#             */
+/*   Updated: 2022/08/26 04:04:24 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-char	*ft_strncpy(char *dest, char *src, unsigned int n);
-
-int	main(void)
+char	*ft_strlowcase(char *str)
 {
-	return (0);
+	int	index;
+
+	index = 0;
+	while (str[index])
+	{
+		if (str[index] >= 'A' && str[index] <= 'Z')
+			str[index] += 32;
+		index++;
+	}
+	return (str);
 }

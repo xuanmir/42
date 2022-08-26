@@ -3,28 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/24 19:40:18 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/24 20:17:56 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/26 03:48:42 by xuanmir           #+#    #+#             */
+/*   Updated: 2022/08/26 04:19:34 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char	*ft_strcpy(char *dest, char *src);
+char	*ft_strcapitalize(char *str);
 
 int	main(void)
 {
-	char	*copy;
+	char	str[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
 
-	copy = ft_strcpy("a", "Coucou");
-	printf("%s", copy);
+	printf("Original: %s\n", str);
+	ft_strcapitalize(str);
+	printf("Capitalized: %s\n", str);
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	printf("%s", ft_strcpy("A", "Coucou"));
-// 	return (0);
-// }

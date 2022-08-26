@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/24 19:41:10 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/25 19:28:10 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/26 04:11:44 by xuanmir           #+#    #+#             */
+/*   Updated: 2022/08/26 04:12:19 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strupcase(char *str)
 {
 	int	index;
 
 	index = 0;
-	while (src[index] != '\0')
+	while (str[index])
 	{
-		dest = src;
+		if (str[index] >= 'a' && str[index] <= 'z')
+			str[index] -= 32;
 		index++;
 	}
-	dest[index - 1] = '\0';
-	return (dest);
+	return (str);
 }

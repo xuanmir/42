@@ -1,20 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/25 19:07:22 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/26 02:33:50 by xuanmir          ###   ########.fr       */
+/*   Created: 2022/08/26 03:49:39 by xuanmir           #+#    #+#             */
+/*   Updated: 2022/08/26 03:50:01 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-char	*ft_strncpy(char *dest, char *src, unsigned int n);
-
-int	main(void)
+char	*ft_strcapitalize(char *str)
 {
-	return (0);
+	return (str);
 }

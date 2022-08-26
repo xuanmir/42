@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/25 19:07:22 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/26 02:33:50 by xuanmir          ###   ########.fr       */
+/*   Created: 2022/08/26 03:01:22 by xuanmir           #+#    #+#             */
+/*   Updated: 2022/08/26 03:12:05 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-char	*ft_strncpy(char *dest, char *src, unsigned int n);
-
-int	main(void)
+void	ft_sort_int_tab(int *tab, int size)
 {
-	return (0);
+	int	a;
+	int	b;
+	int	tmp;
+
+	a = 0;
+	b = 0;
 }
