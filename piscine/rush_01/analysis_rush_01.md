@@ -1,4 +1,4 @@
-# Rush_01
+# rush_01
 The Skyscraper Problem
 
 ### Step 1 - Check input length
