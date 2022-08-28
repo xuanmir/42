@@ -71,9 +71,9 @@ str[index] = str[index - 1] + str[index];
 ---
 ### Main Arguments
 
-argc
-
-argv
+```c
+int main(int argc, char **argv);
+```
 
 ---
 ### Split
