@@ -73,7 +73,6 @@ str[index] = str[index - 1] + str[index];
 
 ```c
 int argc
-
 char **argv
 ```
 
