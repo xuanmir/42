@@ -1,38 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/25 19:06:34 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/26 22:59:51 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/25 19:07:22 by jdiosdad          #+#    #+#             */
+/*   Updated: 2022/08/28 13:19:57 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+#include <stdio.h>
+
+char	*ft_strncpy(char *dest, char *src, unsigned int n);
+
+int	main(void)
 {
-	int	index;
+	char			dest[] = "Hello fren, I have something to tell you";
+	char			src[] = "Coucou mon vieux";
+	unsigned int	n = 17;
 
-	index = 0;
+	printf("Original: %s\n", dest);
+	ft_strncpy(dest, src, n);
+	printf("Modified: %s\n", dest);
+	return (0);
 }
-
-/*
-check man strncpy
-*/
-
-/*
-char	*ft_strcpy(char *dest, char *src)
-{
-	int	index;
-
-	index = 0;
-	while (src[index])
-	{
-		dest[index] = src[index];
-		index++;
-	}
-	dest[index] = '\0';
-	return (dest);
-}
-*/

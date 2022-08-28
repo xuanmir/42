@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/25 19:07:22 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/26 22:59:16 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/25 19:06:34 by jdiosdad          #+#    #+#             */
+/*   Updated: 2022/08/28 13:13:02 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-char	*ft_strncpy(char *dest, char *src, unsigned int n);
-
-int	main(void)
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	char			dest[1337];
-	char			src[] = "Coucou Pauline, merci pour le bulletproof d'amour <3";
-	unsigned int	n;
+	unsigned int	index;
 
-	ft_strncpy(dest, src, n);
-	printf("%s\n", dest);
-	return (0);
+	index = 0;
+	while (index < n && src[index] != '\0')
+	{
+		dest[index] = src[index];
+		index++;
+	}
+	while (index < n)
+	{
+		dest[index] = '\0';
+		index++;
+	}
+	return (dest);
 }
