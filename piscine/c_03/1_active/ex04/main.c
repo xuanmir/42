@@ -19,7 +19,7 @@ int	main(void)
 {
 	char	haystack[] = "Hello, I'm haystack, can you find the needle?";
 	char	needle_empty[] = "";					// return (str);
-	char	needle_nowhere[] = "nowhere";			// return ('\0');
+	char	needle_nowhere[] = "nowhere";				// return ('\0');
 	char	needle_found[] = "needle";				// return (str[index]);
 
 	printf("strstr: %s, ft_strstr: %s",
