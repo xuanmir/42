@@ -1,19 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat_spaces.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/30 17:58:17 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/30 17:59:08 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/30 10:50:56 by xuanmir           #+#    #+#             */
+/*   Updated: 2022/08/30 17:58:05 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
-{
-	return (dest);
-}
 
 /*
 STRLCPY(3)                  Library Functions Manual                  STRLCPY(3)
