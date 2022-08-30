@@ -5,15 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/30 06:02:38 by xuanmir           #+#    #+#             */
-/*   Updated: 2022/08/30 10:52:55 by xuanmir          ###   ########.fr       */
+/*   Created: 2022/08/30 10:50:46 by xuanmir           #+#    #+#             */
+/*   Updated: 2022/08/30 10:51:51 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
 
-char	*ft_strstr(char *str, char *to_find);
+unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
 
 int	main(void)
 {
