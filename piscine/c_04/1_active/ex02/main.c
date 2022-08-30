@@ -1,33 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/30 17:56:51 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/30 18:22:41 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/30 22:00:20 by jdiosdad          #+#    #+#             */
+/*   Updated: 2022/08/30 22:01:17 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(char *str, char *to_find)
-{
-	int	index;
+void	ft_putnbr(int nb);
 
-	index = 0;
-	if (*to_find == '\0')
-		return (str);
-	while (str[index])
-	{
-		while (str[index])			// nowhere
-		{
-			while (str[index])		// found
-			{
-				index++;
-			}
-			index++;
-		}
-		index++;
-	}
-	return (str);
+int	main(void)
+{
+	return (0);
 }

@@ -5,19 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/18 17:52:02 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/30 22:08:38 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/30 20:18:26 by jdiosdad          #+#    #+#             */
+/*   Updated: 2022/08/30 20:18:45 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putnbr(int nb);
+#include <stdio.h>
+
+int	ft_strlen(char *str);
 
 int	main(void)
 {
-	ft_putnbr(42);
-	// ft_putnbr(0);
-	// ft_putnbr(-256);
-	// ft_putnbr(2147483647);
-	// ft_putnbr(-2147483648);
+	int	strlen;
+
+	strlen = ft_strlen("Here's a string. How long do you think it is?");
+	printf("String contains %i characters.\n", strlen);
+	strlen = ft_strlen("Here's another string. How long do you think it is?");
+	printf("String contains %i characters.\n", strlen);
+	strlen = ft_strlen("Bla");
+	printf("String contains %i characters.\n", strlen);
 	return (0);
 }

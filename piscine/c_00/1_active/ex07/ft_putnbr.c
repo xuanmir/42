@@ -6,24 +6,41 @@
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 17:33:31 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/19 13:02:58 by jdiosdad         ###   ########.fr       */
+/*   Updated: 2022/08/30 23:23:20 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+// void	ft_putchar(char c)
+// {
+// 	write(1, &c, 1);
+// }
+
+// void	ft_putnbr(int nb)
+// {
+// 	int		index;
+// 	char	*numstr;
+
+// 	index = 0;
+// 	numstr = nb + '0';
+// 	while (numstr[index])
+// 	{
+// 		ft_putchar(numstr[index]);
+// 		index++;
+// 	}
+// }
 
 void	ft_putnbr(int nb)
 {
-	unsigned int	n;
+	// unsigned int	n;
 
-	n = nb;
-	ft_putchar(n);
+	// n = nb;
+	// ft_putchar(nb);
+	write(1, &nb, 1);
 }
+
+
 
 // if (-10 < n && n < 10)
 // {

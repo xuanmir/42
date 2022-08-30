@@ -1,33 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/30 17:56:51 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/30 18:22:41 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/30 20:23:51 by jdiosdad          #+#    #+#             */
+/*   Updated: 2022/08/30 20:23:55 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(char *str, char *to_find)
+#include <unistd.h>
+
+void	ft_putstr(char *str)
 {
 	int	index;
 
 	index = 0;
-	if (*to_find == '\0')
-		return (str);
-	while (str[index])
+	while (str[index] != '\0')
 	{
-		while (str[index])			// nowhere
-		{
-			while (str[index])		// found
-			{
-				index++;
-			}
-			index++;
-		}
+		write(1, &str[index], 1);
 		index++;
 	}
-	return (str);
 }
