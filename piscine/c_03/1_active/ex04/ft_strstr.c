@@ -15,18 +15,19 @@ char	*ft_strstr(char *str, char *to_find)
 	int	str_index;
 	int	find_index;
 
-	index = 0;
-	if (*to_find == '\0')
+	str_index = 0;
+	if (*to_find == '\0')      // empty
 		return (str);
 	while (str[str_index])
 	{
-		while (str[index])			// nowhere
+		find_index = 0;
+		while (str[find_index])			// nowhere
 		{
 			while (str[index])		// found
 			{
 				index++;
 			}
-			index++;
+			find_index++;
 		}
 		str_index++;
 	}
