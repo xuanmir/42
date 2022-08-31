@@ -12,12 +12,13 @@
 
 char	*ft_strstr(char *str, char *to_find)
 {
-	int	index;
+	int	str_index;
+	int	find_index;
 
 	index = 0;
 	if (*to_find == '\0')
 		return (str);
-	while (str[index])
+	while (str[str_index])
 	{
 		while (str[index])			// nowhere
 		{
@@ -27,7 +28,7 @@ char	*ft_strstr(char *str, char *to_find)
 			}
 			index++;
 		}
-		index++;
+		str_index++;
 	}
 	return (str);
 }
