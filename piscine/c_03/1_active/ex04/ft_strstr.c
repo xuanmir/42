@@ -6,7 +6,7 @@
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/30 17:56:51 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/30 18:22:41 by jdiosdad         ###   ########.fr       */
+/*   Updated: 2022/08/31 17:49:01 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,40 @@ char	*ft_strstr(char *str, char *to_find)
 	int	find_index;
 
 	str_index = 0;
-	if (*to_find == '\0')      // empty
+	if (*to_find == '\0')
 		return (str);
 	while (str[str_index])
 	{
 		find_index = 0;
-		while (str[find_index])			// nowhere
+		while (str[find_index])
 		{
-			while (str[index])		// found
+			while (str[find_index])
 			{
-				index++;
+				return (&str[str_index]);
 			}
 			find_index++;
 		}
 		str_index++;
 	}
-	return (str);
+	return ('\0');
 }
+
+/*
+<_line[19..20]>
+{
+	$empty ==>
+		{return (str);}
+}
+
+<_line[24..31]>
+{
+	$nowhere ==>
+		{return ('\0');}
+}
+
+<_line[26..29]>
+{
+	$found ==>
+		{return (&str[index]);}
+}
+*/

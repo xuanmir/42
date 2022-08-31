@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/30 22:00:37 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/31 15:08:32 by xuanmir          ###   ########.fr       */
+/*   Updated: 2022/08/31 19:31:24 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putchar(char c)
 
 void	ft_putnbr(int nb)
 {
-	unsigned int	n;
+	long int	n;
 
 	n = nb;
 	if (nb < 0)

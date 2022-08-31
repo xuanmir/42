@@ -19,8 +19,22 @@
 ---
 ### Characters
 
+```c
+int		i;
+char	c;
+
+char = i + '0';
+```
+
 ---
 ### Integers
+
+```c
+char	c;
+int		i;
+
+int = c - '0';
+```
 
 ---
 ### Pointers
@@ -30,6 +44,9 @@
 
 ```c
 array[index] == *(array + index)
+
+array[0] == *(array + 0) == *array		// ????
+array[1] == *(array + 1)
 ```
 ```c
 char  array[3];
@@ -48,6 +65,9 @@ char  array[] = "Abc";
 
 ```c
 array[index] == *(array + index)
+
+array[0] == *(array + 0) == *array		// ????
+array[1] == *(array + 1)
 ```
 ```c
 int array[3];
