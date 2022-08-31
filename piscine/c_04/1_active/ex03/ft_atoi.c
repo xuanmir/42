@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/18 17:52:02 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/30 22:08:38 by jdiosdad         ###   ########.fr       */
+/*   Created: 2022/08/31 15:12:54 by xuanmir           #+#    #+#             */
+/*   Updated: 2022/08/31 15:12:57 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putnbr(int nb);
-
-int	main(void)
-{
-	ft_putnbr(42);
-	// ft_putnbr(0);
-	// ft_putnbr(-256);
-	// ft_putnbr(2147483647);
-	// ft_putnbr(-2147483648);
-	return (0);
-}
+/*
+whitespace characters are space (' '),
+tab ('\t'), carriage return ('\r'),
+newline ('\n'), vertical tab ('\v'),
+and formfeed ('\f').
+*/

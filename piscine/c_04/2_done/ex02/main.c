@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/30 20:23:51 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/31 15:26:14 by xuanmir          ###   ########.fr       */
+/*   Created: 2022/08/30 22:00:20 by jdiosdad          #+#    #+#             */
+/*   Updated: 2022/08/31 15:19:53 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
+void	ft_putnbr(int nb);
 
-void	ft_putchar(char c)
+int	main(void)
 {
-	write(1, &c, 1);
-}
-
-void	ft_putstr(char *str)
-{
-	int	index;
-
-	index = 0;
-	while (str[index] != '\0')
-	{
-		ft_putchar(str[index]);
-		index++;
-	}
+	ft_putnbr(42);
+	ft_putchar('\n');
+	ft_putnbr(0);
+	ft_putchar('\n');
+	ft_putnbr(-256);
+	ft_putchar('\n');
+	ft_putnbr(2147483647);
+	ft_putchar('\n');
+	ft_putnbr(-2147483648);
+	ft_putchar('\n');
+	return (0);
 }

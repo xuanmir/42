@@ -3,44 +3,38 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 17:33:31 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/30 23:23:20 by jdiosdad         ###   ########.fr       */
+/*   Updated: 2022/08/31 14:45:00 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-// void	ft_putchar(char c)
-// {
-// 	write(1, &c, 1);
-// }
-
-// void	ft_putnbr(int nb)
-// {
-// 	int		index;
-// 	char	*numstr;
-
-// 	index = 0;
-// 	numstr = nb + '0';
-// 	while (numstr[index])
-// 	{
-// 		ft_putchar(numstr[index]);
-// 		index++;
-// 	}
-// }
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
 
 void	ft_putnbr(int nb)
 {
-	// unsigned int	n;
+	unsigned int	n;
 
-	// n = nb;
-	// ft_putchar(nb);
-	write(1, &nb, 1);
+	n = nb;
+	if (nb < 0)
+	{
+		ft_putchar('-');
+		n = nb * -1;
+	}
+	if (n < 10)
+		ft_putchar(n + '0');
+	else
+	{
+		ft_putnbr(n / 10);
+		ft_putnbr(n % 10);
+	}
 }
-
-
 
 // if (-10 < n && n < 10)
 // {
@@ -63,3 +57,5 @@ void	ft_putnbr(int nb)
 // uint_min = 0;
 
 // ARE SUPPOSED TO CHECK FOR OVERFLOW ???
+
+// https://wuhrr.wordpress.com/2007/11/09/how-to-print-a-long-integer-using-only-putchar/
