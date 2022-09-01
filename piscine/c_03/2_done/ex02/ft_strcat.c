@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/30 03:33:12 by xuanmir           #+#    #+#             */
-/*   Updated: 2022/08/30 05:39:14 by xuanmir          ###   ########.fr       */
+/*   Updated: 2022/09/01 22:41:38 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,23 @@ char	*ft_strcat(char *dest, char *src)
 	dest[index] = '\0';
 	return (dest);
 }
+
+// char	*ft_strcat(char *dest, char *src)
+// {
+// 	int	i;
+// 	int	j;
+
+// 	i = 0;
+// 	j = 0;
+// 	if (!dest || !src)
+// 		return (dest);
+// 	while (dest[i] != '\0')
+// 		i++;
+// 	while (src[j] != '\0')
+// 	{
+// 		dest[i + j] = src[j];
+// 		j++;
+// 	}
+// 	dest[i + j] = '\0';
+// 	return (dest);
+// }
