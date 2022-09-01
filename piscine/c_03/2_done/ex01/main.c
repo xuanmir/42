@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/30 01:03:21 by xuanmir           #+#    #+#             */
-/*   Updated: 2022/08/30 02:45:15 by xuanmir          ###   ########.fr       */
+/*   Updated: 2022/09/01 17:42:42 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	main(void)
 	printf("strncmp: %i, ft_strncmp: %i\n",
 		strncmp("42", "42", 32), ft_strncmp("42", "42", 32));
 	printf("strncmp: %i, ft_strncmp: %i\n",
-		strncmp("Alpha", "Alpha", 3), ft_strncmp("Alpha", "Alpha", 3));
+		strncmp("One", "Two", 0), ft_strncmp("One", "Two", 0));
 	printf("strncmp: %i, ft_strncmp: %i\n",
 		strncmp("GM", "GN", 1), ft_strncmp("GM", "GN", 1));
 	printf("strncmp: %i, ft_strncmp: %i\n",
