@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/31 15:13:01 by xuanmir           #+#    #+#             */
-/*   Updated: 2022/09/01 13:11:23 by xuanmir          ###   ########.fr       */
+/*   Updated: 2022/09/01 23:59:05 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,7 @@ int	main(void)
 		atoi("-+-+-101"), ft_atoi("-+-+-101"));
 	printf("atoi:[%i]\nft_atoi:[%i]\ncorrect_answer:[12358]\n",
 		atoi("\v\t12358\n\tfi,fibo,nacci\v"), ft_atoi("\v\t12358\n\tfi,fibo,nacci\v"));
+	printf("atoi:[%i]\nft_atoi:[%i]\ncorrect_answer:[-453]\n",
+		atoi("  \t  +++-----453"), ft_atoi("  \t  +++-----453"));
 	return (0);
 }
