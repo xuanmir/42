@@ -23,11 +23,16 @@ char	*ft_strstr(char *str, char *to_find)
 		find_index = 0;
 		while (str[find_index])
 		{
-			while (str[find_index])
+			/*while (str[find_index])
 			{
 				return (&str[str_index]);
 			}
-			find_index++;
+			find_index++;*/
+			if (str[find_index])
+			{
+				find_index++;
+			}
+			return (&str[str_index]);
 		}
 		str_index++;
 	}
