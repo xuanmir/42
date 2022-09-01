@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/30 05:38:12 by xuanmir           #+#    #+#             */
-/*   Updated: 2022/08/30 06:01:12 by xuanmir          ###   ########.fr       */
+/*   Updated: 2022/09/01 19:08:00 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb);
 
 int	main(void)
 {
-	char	dest1[19] = "concatenation";
-	char	dest2[19] = "concatenation";
+	char	dest1[18] = "concatenation";
+	char	dest2[18] = "concatenation";
 	char	src1[] = "10101";
 	char	src2[] = "10101";
 	unsigned int	nb1 = 3;
