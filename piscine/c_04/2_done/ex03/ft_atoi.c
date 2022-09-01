@@ -3,22 +3,54 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/31 15:12:54 by xuanmir           #+#    #+#             */
-/*   Updated: 2022/09/01 00:24:05 by jdiosdad         ###   ########.fr       */
+/*   Updated: 2022/09/01 13:14:07 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <ctype.h>
-#include <stdio.h>
+int	ft_atoi(char *str)
+{
+	int	index;
+	int	number;
+	int	sign;
 
-// int	isdigit(int c);
-// int	isspace(int c);
+	index = 0;
+	number = 0;
+	sign = 1;
+	while (((str[index] >= 9) && (str[index] <= 13)) || (str[index] == 32))
+		index = index + 1;
+	while (str[index] == '+' || str[index] == '-')
+	{
+		if (str[index] == '-')
+			sign = sign * -1;
+		index = index + 1;
+	}
+	if ((str[index] >= '0') && (str[index] <= '9'))
+	{
+		while ((str[index] >= '0') && (str[index] <= '9'))
+		{
+			number = (str[index] - '0') + (number * 10);
+			index = index + 1;
+		}
+		return (number * sign);
+	}
+	return (0);
+}
 
+/*
 int	ft_ischarspace(char c)
 {
 	if (((c >= 9) && (c <= 13)) || (c == 32))
+		return (1);
+	else
+		return (0);
+}
+
+int	ft_ischarsign(char c)
+{
+	if (str[index] == '+' || str[index] == '-')
 		return (1);
 	else
 		return (0);
@@ -40,94 +72,43 @@ int	ft_countneg(char *str)
 	return (countneg);
 }
 
-int	ft_ischardigit(char c);
+int	ft_ischardigit(char c)
+{
+	if ((c >= '0') && (c <= '9'))
+		return (1);
+	else
+		return (0);
+}
 
 int	ft_atoi(char *str)
 {
 	int	index;
-	int	sign;
 	int	number;
+	int	sign;
 
 	index = 0;
+	number = 0;
 	sign = 1;
-	number = 42;
-	printf("input:[%s]\n", str);						// This must be erased!!!
-	while (str[index])
+	while (ft_ischarspace(str[index]))
+		index = index + 1;
+	while (str[index] == '+' || str[index] == '-')
 	{
-		if (ft_ischarspace(str[index]) == 0)
-			return (0);
-		while (str[index] == '+' || str[index] == '-')
-		{
-			if (str[index] == '-')
-				sign = sign * -1;
-			index = index + 1;
-		}
-		while ((str[index] >= 0) && (str[index] <= 9))
+		if (str[index] == '-')
+			sign = sign * -1;
+		index = index + 1;
+	}
+	if (ft_ischardigit(str[index]))
+	{
+		while (ft_ischardigit(str[index]))
 		{
 			number = (str[index] - '0') + (number * 10);
 			index = index + 1;
 		}
-		// if ()
-		// 	return (number * sign);
-		index = index + 1;
+		return (number * sign);
 	}
 	return (0);
 }
-
-// int	ft_atoi(char *str)
-// {
-// 	int	index;
-// 	int	countneg;
-// 	int	number;
-
-// 	index = 0;
-// 	countneg = 0;
-// 	printf("input:[%s]\n", str);						// This must be erased!!!
-// 	while (str[index])
-// 	{
-// 		if (ft_ischarspace(str[index]) == 0)
-// 			return (0);
-// 		while (str[index] == '+' || str[index] == '-')
-// 		{
-// 			if (str[index] == '-')
-// 				countneg = countneg + 1;
-// 			index = index + 1;
-// 		}
-// 		// while ((str[index] >= 0) && (str[index] <= 9))
-// 		// {
-
-// 		// }
-// 		if ((countneg % 2) != 0)
-// 			number = number * -1;
-// 		index = index + 1;
-// 	}
-// 	return (0);
-// }
-
-// int	ft_atoi(char *str)
-// {
-// 	int	sign;
-// 	int	number;
-
-// 	sign = 1;
-// 	number = 0;
-// 	if (*str == '-')
-// 	{
-// 		sign = sign * -1;
-// 		str = str + 1;
-// 	}
-// 	while (*str)
-// 	{
-// 		number = (*str - '0') + (number * 10);
-// 		str = str + 1;
-// 	}
-// 	return (number * sign);
-// }
-
-int	ft_chartoint(char c)
-{
-	return ((int)(c + '0'));
-}
+*/
 
 /*
 isdigit()
