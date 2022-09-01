@@ -6,7 +6,7 @@
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/30 17:56:51 by jdiosdad          #+#    #+#             */
-/*   Updated: 2022/08/31 17:49:01 by jdiosdad         ###   ########.fr       */
+/*   Updated: 2022/09/01 21:02:34 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,11 @@ char	*ft_strstr(char *str, char *to_find)
 	while (str[str_index])
 	{
 		find_index = 0;
-		while (str[find_index])
+		while (str[str_index + find_index] == to_find[find_index])
 		{
-			/*while (str[find_index])
-			{
+			if (to_find[find_index + 1] == '\0')
 				return (&str[str_index]);
-			}
-			find_index++;*/
-			if (str[find_index])
-				find_index++;
-			return (&str[str_index]);
+			find_index++;
 		}
 		str_index++;
 	}

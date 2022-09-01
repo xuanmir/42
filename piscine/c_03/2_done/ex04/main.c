@@ -6,7 +6,7 @@
 /*   By: jdiosdad <jdiosdad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/30 06:02:38 by xuanmir           #+#    #+#             */
-/*   Updated: 2022/08/31 18:19:13 by jdiosdad         ###   ########.fr       */
+/*   Updated: 2022/09/01 21:02:27 by jdiosdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ char	*ft_strstr(char *str, char *to_find);
 int	main(void)
 {
 	char	haystack[] = "Hello, I'm haystack, can you find the needle?";
-	char	needle_empty[] = "";					/* return (str); */
-	char	needle_nowhere[] = "nowhere";			/* return ('\0'); */
-	char	needle_found[] = "the";					/* return (str[index]); */
+	char	needle_empty[] = "";
+	char	needle_nowhere[] = "nowhere";
+	char	needle_found[] = "the";
 
 	printf("strstr: %s, ft_strstr: %s\n",
 		strstr(haystack, needle_empty), ft_strstr(haystack, needle_empty));
