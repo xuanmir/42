@@ -6,7 +6,7 @@
 /*   By: xuanmir <xuanmir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/31 15:12:54 by xuanmir           #+#    #+#             */
-/*   Updated: 2022/09/01 13:14:07 by xuanmir          ###   ########.fr       */
+/*   Updated: 2022/09/02 08:55:15 by xuanmir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,17 +27,42 @@ int	ft_atoi(char *str)
 			sign = sign * -1;
 		index = index + 1;
 	}
-	if ((str[index] >= '0') && (str[index] <= '9'))
+	while ((str[index] >= '0') && (str[index] <= '9'))
 	{
-		while ((str[index] >= '0') && (str[index] <= '9'))
-		{
-			number = (str[index] - '0') + (number * 10);
-			index = index + 1;
-		}
-		return (number * sign);
+		number = (str[index] - '0') + (number * 10);
+		index = index + 1;
 	}
-	return (0);
+	return (number * sign);
 }
+
+// int	ft_atoi(char *str)
+// {
+// 	int	index;
+// 	int	number;
+// 	int	sign;
+
+// 	index = 0;
+// 	number = 0;
+// 	sign = 1;
+// 	while (((str[index] >= 9) && (str[index] <= 13)) || (str[index] == 32))
+// 		index = index + 1;
+// 	while (str[index] == '+' || str[index] == '-')
+// 	{
+// 		if (str[index] == '-')
+// 			sign = sign * -1;
+// 		index = index + 1;
+// 	}
+// 	if ((str[index] >= '0') && (str[index] <= '9'))
+// 	{
+// 		while ((str[index] >= '0') && (str[index] <= '9'))
+// 		{
+// 			number = (str[index] - '0') + (number * 10);
+// 			index = index + 1;
+// 		}
+// 		return (number * sign);
+// 	}
+// 	return (0);
+// }
 
 /*
 int	ft_ischarspace(char c)
