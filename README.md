@@ -24,6 +24,7 @@ int		i;
 char	c;
 
 char = i + '0';
+char = (char) i; ???
 ```
 
 ---
@@ -34,6 +35,7 @@ char	c;
 int		i;
 
 int = c - '0';
+int = (int) c; ???
 ```
 
 ---
